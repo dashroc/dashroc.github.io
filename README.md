@@ -1,3 +1,3 @@
-dashroc.github.io
+DashielHermann.com
 =================
-Personal Portfolio Site
+The official site of the Dashiel Hermann Fan Club.
