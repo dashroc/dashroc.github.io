@@ -1,3 +1,3 @@
 DashielHermann.com
 =================
-The official site of the Dashiel Hermann Fan Club.
+The official site of the Dashiel Hermann.
