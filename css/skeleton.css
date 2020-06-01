@@ -22,6 +22,7 @@
 - Spacing
 - Utilities
 - Clearing
+- Navigation
 - Media Queries
 */
 
@@ -41,7 +42,7 @@
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
+/* For devices larger than 320px */
 @media (min-width: 320px) {
   .container {
     width: 85%;
@@ -122,10 +123,14 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 2em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
   font-family: 'Playfair Display', serif;
   color: #333; }
+
+.small_text{
+  font-size: .75em;
+}
 
 
 /* Typography
@@ -392,6 +397,75 @@ hr {
   clear: both; }
 
 
+/* Navigation Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #333;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #CE4242;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #f2f2f2;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 53px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ccc;
+}
+
+.show {
+  display: block;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -409,18 +483,39 @@ there.
     font-size: 300%;
     font-weight: 800;
     line-height: .85;
-    padding: 50px 10px 40px 10px;
+    padding: 50px 0px 40px 0px;
   }
 
   .graphic_hyphen{
     background-color: #333;
     height: 8px;
-    margin-left: 10px;
     width: 55px;
   }
 
+  .graphic_hyphen_small{
+    background-color: #333;
+    height: 8px;
+    width: 35px;
+  }
+
   .intro_text{
-    padding: 30px 10px 50px 10px;
+    padding: 30px 0px 50px 0px;
+  }
+
+  .navbar a{
+    font-size: 14px;
+    padding: 16px 8px;
+  }
+
+  .dropdown .dropbtn{
+    font-size: 14px;
+    padding: 16px 8px;
+  }
+
+  .logo{
+    height: 40px;
+    width: auto;
+    padding: 5px 5px 0px 5px;
   }
 
 }
@@ -432,18 +527,33 @@ there.
       font-size: 500%;
       font-weight: 800;
       line-height: .85;
-      padding: 50px 20px 40px 20px;
+      padding: 50px 0px 60px 0px;
   }
 
   .graphic_hyphen{
     background-color: #333;
     height: 10px;
-    margin-left: 20px;
     width: 75px;
   }
 
   .intro_text{
-    padding: 30px 20px 50px 20px;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .navbar a{
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+
+  .dropdown .dropbtn{
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+
+  .logo{
+    height: 40px;
+    width: auto;
+    padding: 5px 5px 0px 20px;
   }
 
 }
@@ -455,18 +565,17 @@ there.
     font-size: 600%;
     font-weight: 800;
     line-height: .85;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 60px 0px;
   }
 
   .graphic_hyphen{
     background-color: #333;
     height: 10px;
-    margin-left: 20px;
     width: 75px;
   }
 
   .intro_text{
-    padding: 30px 20px 50px 20px;
+    padding: 50px 0px 50px 0px;
   }
 
 }
@@ -478,18 +587,17 @@ there.
     font-size: 800%;
     font-weight: 800;
     line-height: .85;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 60px 0px;
   }
 
   .graphic_hyphen{
     background-color: #333;
     height: 10px;
-    margin-left: 20px;
     width: 75px;
   }
 
   .intro_text{
-    padding: 30px 20px 50px 20px;
+    padding: 50px 0px 50px 0px;
   }
 
 }
@@ -501,18 +609,17 @@ there.
     font-size: 800%;
     font-weight: 800;
     line-height: .85;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 0px 60px 0px;
   }
 
   .graphic_hyphen{
     background-color: #333;
     height: 10px;
-    margin-left: 20px;
     width: 75px;
   }
 
   .intro_text{
-    padding: 30px 20px 50px 20px;
+    padding: 50px 0px 50px 0px;
   }
 
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Official Portfolio Website of Dashiel Hermann</title>
+  <meta name="description" content="This guy does User Interface Design, Product Design, Graphic Design">
+  <meta name="author" content="Dashiel Hermann">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="navbar">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <a href="https://www.linkedin.com/in/dashielhermann/" target="_blank">LinkedIn</a>
+    <div class="dropdown">
+    <a class="dropbtn" onclick="myFunction()">My Work</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="work_coming_soon.html">Social Solutions</a>
+      <a href="work_coming_soon.html">DRIVIN</a>
+      <a href="work_coming_soon.html">The Tie Bar</a>
+      <a href="work_coming_soon.html">Centro</a>
+      <a href="work_coming_soon.html">WHITTMANHART</a>
+      <a href="work_coming_soon.html">Critical Mass</a>
+      <a href="work_coming_soon.html">Noble</a>
+      <a href="work_coming_soon.html">J.D. Technology Systems</a>
+      <a href="work_coming_soon.html">Personal Projects</a>
+    </div>
+    </div>
+    <a href="index.html">Home</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="dash_header">My Work</div>
+        <div class="graphic_hyphen"></div>
+        <div class="intro_text"><p>Yeah, yeah, yeah. I know. It's coming... geez.</p></div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- End Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>
