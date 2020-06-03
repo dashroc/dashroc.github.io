@@ -614,11 +614,6 @@ there.
     padding: 5px 5px 0px 20px;
   }
 
-  .modal-content {
-    width: 90%;
-    max-width: 1200px;
-  }
-
   .mySlides {
     text-align: center;
   }
@@ -643,6 +638,11 @@ there.
 
   .intro_text{
     padding: 50px 0px 50px 0px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 1200px;
   }
 
 }
