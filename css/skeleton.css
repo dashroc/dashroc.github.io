@@ -615,8 +615,12 @@ there.
   }
 
   .modal-content {
-    width: 80%;
-    max-width: 750px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .mySlides {
+    text-align: center;
   }
 
 }
