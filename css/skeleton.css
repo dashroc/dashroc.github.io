@@ -614,10 +614,6 @@ there.
     padding: 5px 5px 0px 20px;
   }
 
-  .mySlides {
-    text-align: center;
-  }
-
 }
 
 /* Larger than tablet */
@@ -643,6 +639,10 @@ there.
   .modal-content {
     width: 90%;
     max-width: 1200px;
+  }
+
+  .mySlides {
+    text-align: center;
   }
 
 }
