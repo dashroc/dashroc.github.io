@@ -24,6 +24,7 @@
 - Clearing
 - Navigation
 - Image Lightbox Modal
+- Tabs
 - Media Queries
 */
 
@@ -488,6 +489,7 @@ hr {
   position: relative;
   margin: auto;
   padding: 0;
+  text-align: center;
 }
 
 /* Hide the slides by default */
@@ -514,9 +516,129 @@ hr {
   cursor: pointer;
 }
 
-/* Hide the slides by default */
-.mySlides {
+
+/* Tabs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tabbar {
+  display: block;
+  float: left;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 38px;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+
+.button.button-tab,
+button.button-tab {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 0px;
+  line-height: 0px;
+  letter-spacing: 0rem;
+}
+
+.button.button-tab:hover,
+button.button-tab:hover
+.button.button-tab:focus,
+button.button-tab:focus {
+  color: #FFF;
+  background-color: #333;
+}
+
+
+/* Slideshow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
   display: none;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+.mySlides2 {
+  display: none;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+.mySlides3 {
+  display: none;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #fff;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -576,6 +698,18 @@ there.
     width: 100%;
   }
 
+  .mySlides1 {
+    height: 350px;
+  }
+
+  .mySlides2 {
+    height: 350px;
+  }
+
+  .mySlides3 {
+    height: 350px;
+  }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -612,6 +746,18 @@ there.
     height: 40px;
     width: auto;
     padding: 5px 5px 0px 20px;
+  }
+
+  .mySlides1 {
+    height: 550px;
+  }
+
+  .mySlides2 {
+    height: 550px;
+  }
+
+  .mySlides3 {
+    height: 550px;
   }
 
 }

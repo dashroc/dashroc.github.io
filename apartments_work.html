@@ -64,7 +64,63 @@
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <span style="font-weight: 600;">Work Samples Coming Soon</span><span style="font-size: .85em;"><p>Yeah, yeah, yeah. I know. It's coming... geez. I've got a ton of stuff to sift through in order to finish this section.</p></span>
+        <span style="font-weight: 600;">Apts.com Responsive Redesign</span><span style="font-size: .85em;"><p>During my tenure at Apartments.com, I had the opportunity to redesign the site at least 4 times. This redesign was done in order to make the site responsive.</p></span>
+      </div>
+      <div class="twelve columns">
+        <div class="tabbar">
+          <button class="button button-tab" onclick="openSlides1('Desktop_Apts_1')">Desktop</button>
+          <button class="button button-tab" onclick="openSlides1('Tablet_Apts_2')">Tablet</button>
+          <button class="button button-tab" onclick="openSlides1('Mobile_Apts_1')">Mobile</button>
+        </div>
+      </div>
+      <div class="twelve columns">
+        <div id="Desktop_Apts_1" class="slides1">
+          <div class="slideshow-container">
+            <div class="mySlides1">
+              <img src="images/apartments/responsive_redesign/apts_home_desktop_960.jpg" class="u-max-full-width" onclick="openModal();currentSlide(1)" style="cursor: pointer;">
+            </div>
+            <div class="mySlides1 fade">
+              <img src="images/apartments/responsive_redesign/apts_results_desktop_960.jpg" class="u-max-full-width" onclick="openModal();currentSlide(2)" style="cursor: pointer;">
+            </div>
+            <div class="mySlides1 fade">
+              <img src="images/apartments/responsive_redesign/apts_managed_prop_details_desktop_960.jpg" class="u-max-full-width" onclick="openModal();currentSlide(3)" style="cursor: pointer;">
+            </div>
+            <a class="prev" onclick="plusSlidesB(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlidesB(1, 0)">&#10095;</a>
+          </div>
+        </div>
+
+        <div id="Tablet_Apts_2" class="slides1" style="display:none">
+          <div class="slideshow-container">
+            <div class="mySlides2">
+              <img src="images/apartments/responsive_redesign/apts_home_tablet_768.jpg" class="u-max-full-width" onclick="openModal();currentSlide(4)" style="cursor: pointer;">
+            </div>
+            <div class="mySlides2 fade">
+              <img src="images/apartments/responsive_redesign/apts_results_tablet_768.jpg" class="u-max-full-width" onclick="openModal();currentSlide(5)" style="cursor: pointer;">
+            </div>
+            <div class="mySlides2 fade">
+              <img src="images/apartments/responsive_redesign/apts_managed_prop_details_tablet_768.jpg" class="u-max-full-width" onclick="openModal();currentSlide(6)" style="cursor: pointer;">
+            </div>
+            <a class="prev" onclick="plusSlidesB(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesB(1, 1)">&#10095;</a>
+          </div>
+        </div>
+
+        <div id="Mobile_Apts_1" class="slides1" style="display:none">
+          <div class="slideshow-container">
+            <div class="mySlides3 fade" style="text-align: center;">
+              <img src="images/apartments/responsive_redesign/apts_home_phone_320.jpg" onclick="openModal();currentSlide(7)" style="border: 1px solid #ccc; cursor: pointer;">
+            </div>
+            <div class="mySlides3 fade" style="text-align: center;">
+              <img src="images/apartments/responsive_redesign/apts_results_phone_320.jpg" onclick="openModal();currentSlide(8)" style="border: 1px solid #ccc; cursor: pointer;">
+            </div>
+            <div class="mySlides3 fade" style="text-align: center;">
+              <img src="images/apartments/responsive_redesign/apts_managed_prop_details_phone_320.jpg" onclick="openModal();currentSlide(9)" style="border: 1px solid #ccc; cursor: pointer;">
+            </div>
+            <a class="prev" onclick="plusSlidesB(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlidesB(1, 2)">&#10095;</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -80,16 +136,48 @@
 
 <!-- Modal
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<div id="myModal" class="modal">
+<div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
 
       <div class="mySlides">
-        <img src="#" class="u-max-full-width">
+        <img src="images/apartments/responsive_redesign/apts_home_desktop_960.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_results_desktop_960.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_managed_prop_details_desktop_960.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_home_tablet_768.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_results_tablet_768.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_managed_prop_details_tablet_768.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_home_phone_320.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_results_phone_320.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/apartments/responsive_redesign/apts_managed_prop_details_phone_320.jpg" class="u-max-full-width">
       </div>
 
     </div>
-  </div>-->
+  </div>
 
 <!-- End Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -147,6 +235,42 @@
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+</script>
+
+<!--Tabs 1-->
+<script>
+function openSlides1(slideSet1) {
+  var i;
+  var x = document.getElementsByClassName("slides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(slideSet1).style.display = "block";
+}
+</script>
+
+<!--Slideshow-->
+<script>
+var slideIndexB = [1, 1, 1];
+var slideIdB = ["mySlides1", "mySlides2", "mySlides3"]
+showSlidesB(1, 0);
+showSlidesB(1, 1);
+showSlidesB(1, 2);
+
+function plusSlidesB(n, no) {
+  showSlidesB(slideIndexB[no] += n, no);
+}
+
+function showSlidesB(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideIdB[no]);
+  if (n > x.length) {slideIndexB[no] = 1}
+  if (n < 1) {slideIndexB[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexB[no]-1].style.display = "block";
+}
 </script>
 
 </body>
