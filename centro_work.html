@@ -63,8 +63,64 @@
 
   <div class="container">
     <div class="row">
+      <div class="tweleve columns">
+        <span style="font-weight: 600;">Send RFP Functionality</span><span style="font-size: .85em;"><p>The design system had mostly been established by the time I arrived at Centro. I worked within it to design screens for the web application we were building based on wireframes supplied by our UX designers. Below is an example of the types of screens and screen states that I was producing during my time at Centro.</p></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
       <div class="twelve columns">
-        <span style="font-weight: 600;">Work Samples Coming Soon</span><span style="font-size: .85em;"><p>Yeah, yeah, yeah. I know. It's coming... geez. I've got a ton of stuff to sift through in order to finish this section.</p></span>
+        <div class="slideshow-container" style="margin-bottom: 50px;">
+          <div class="mySlides1">
+            <img src="images/centro/send_rfp/send_rfp_1.jpg" class="u-max-full-width" onclick="openModal();currentSlide(1)" style="cursor: pointer;">
+          </div>
+          <div class="mySlides1">
+            <img src="images/centro/send_rfp/send_rfp_2.jpg" class="u-max-full-width" onclick="openModal();currentSlide(2)" style="cursor: pointer;">
+          </div>
+          <div class="mySlides1">
+            <img src="images/centro/send_rfp/send_rfp_3.jpg" class="u-max-full-width" onclick="openModal();currentSlide(3)" style="cursor: pointer;">
+          </div>
+          <div class="mySlides1">
+            <img src="images/centro/send_rfp/send_rfp_4.jpg" class="u-max-full-width" onclick="openModal();currentSlide(4)" style="cursor: pointer;">
+          </div>
+          <div class="mySlides1">
+            <img src="images/centro/send_rfp/send_rfp_5.jpg" class="u-max-full-width" onclick="openModal();currentSlide(5)" style="cursor: pointer;">
+          </div>
+          <a class="prev" onclick="plusSlidesB(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlidesB(1, 0)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <span style="font-weight: 600;">UX Product Personas</span><span style="font-size: .85em;"><p>The design team was also often tasked with educating the company on who we were designing our product for, what their jobs entailed and their pain points that we were trying to solve. Below are persona posters that hung in the office that I designed alongside our UX designers.</p></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-bottom: 20px;">
+        <img src="images/centro/personas/AC_Persona_V1-01.jpg" class="u-max-full-width" onclick="openModal();currentSlide(6)" style="border: 1px solid #ccc; cursor: pointer;">
+      </div>
+      <div class="one-half column" style="margin-bottom: 20px;">
+        <img src="images/centro/personas/AM_Persona_V1-01.jpg" class="u-max-full-width" onclick="openModal();currentSlide(7)" style="border: 1px solid #ccc; cursor: pointer;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <img src="images/centro/personas/CA_Persona_V1-01.jpg" class="u-max-full-width" onclick="openModal();currentSlide(8)" style="border: 1px solid #ccc; cursor: pointer;">
+      </div>
+      <div class="one-half column">
+        <img src="images/centro/personas/CM_Persona_V1-01.jpg" class="u-max-full-width" onclick="openModal();currentSlide(9)" style="border: 1px solid #ccc; cursor: pointer;">
       </div>
     </div>
   </div>
@@ -80,16 +136,41 @@
 
 <!-- Modal
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<div id="myModal" class="modal">
+  <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
 
       <div class="mySlides">
-        <img src="#" class="u-max-full-width">
+        <img src="images/centro/send_rfp/send_rfp_1.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/send_rfp/send_rfp_2.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/send_rfp/send_rfp_3.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/send_rfp/send_rfp_4.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/send_rfp/send_rfp_5.jpg" class="u-max-full-width">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/centro/personas/AC_Persona_V1-01.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/personas/AM_Persona_V1-01.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/personas/CA_Persona_V1-01.jpg" class="u-max-full-width">
+      </div>
+      <div class="mySlides">
+        <img src="images/centro/personas/CM_Persona_V1-01.jpg" class="u-max-full-width">
       </div>
 
     </div>
-  </div>-->
+  </div>
 
 <!-- End Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -147,6 +228,28 @@
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+</script>
+
+<!--Slideshow-->
+<script>
+var slideIndexB = [2];
+var slideIdB = ["mySlides1"]
+showSlidesB(1, 0);
+
+function plusSlidesB(n, no) {
+  showSlidesB(slideIndexB[no] += n, no);
+}
+
+function showSlidesB(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideIdB[no]);
+  if (n > x.length) {slideIndexB[no] = 1}
+  if (n < 1) {slideIndexB[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexB[no]-1].style.display = "block";
+}
 </script>
 
 </body>
