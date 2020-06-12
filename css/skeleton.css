@@ -560,7 +560,7 @@ button.button-tab:focus {
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10, .mySlides11, .mySlides12 {
   display: none;
   overflow: scroll;
   border: 1px solid #ccc;
@@ -689,7 +689,7 @@ there.
     text-align: center;
   }
 
-  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides11, .mySlides12 {
     height: 350px;
   }
 
@@ -739,7 +739,7 @@ there.
     text-align: left;
   }
 
-  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides10 {
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides10, .mySlides11, .mySlides12 {
     height: 550px;
   }
 
