@@ -139,8 +139,8 @@
         <span style="font-weight: 600;">Insights</span><span style="font-size: .85em;"><p>An early attempt at an internal and external tool that could help provide insightful information about a used car dealer's lot and needs based on that lot information.<br><span class="small_text" style="font-weight: 800;">The images below scroll up&#47;down. Click to enlarge.</span></p></span>
       </div>
       <div class="twelve columns">
-        <div class="tabbar">
-          <button class="button button-tab" onclick="openSlides1('Desktop_Apts_1')">Desktop</button>
+        <div class="tabbar" id="insightsTabs">
+          <button class="button button-tab active" onclick="openSlides1('Desktop_Apts_1')">Desktop</button>
           <button class="button button-tab" onclick="openSlides1('Tablet_Apts_1')">Tablet</button>
           <button class="button button-tab" onclick="openSlides1('Mobile_Apts_1')">Mobile</button>
         </div>
@@ -221,9 +221,9 @@
         <span style="font-weight: 600;">DRIVIN Marketplace</span><span style="font-size: .85em;"><p>A client-facing subscription site that allowed used car dealers to buy new inventory from and sell their current inventory to each other based on recommendations provided by DRIVIN's data science algorithm.<br><span class="small_text" style="font-weight: 800;">The images below scroll up&#47;down. Click to enlarge.</span></p></span>
       </div>
       <div class="twelve columns">
-        <div class="tabbar">
-          <button class="button button-tab" onclick="openSlides2('Desktop_Apts_2')">Desktop</button>
-          <button class="button button-tab" onclick="openSlides2('Mobile_Apts_2')">Mobile</button>
+        <div class="tabbar" id="marketplaceTabs">
+          <button class="button button-tab2 active2" onclick="openSlides2('Desktop_Apts_2')">Desktop</button>
+          <button class="button button-tab2" onclick="openSlides2('Mobile_Apts_2')">Mobile</button>
         </div>
       </div>
       <div class="twelve columns">
@@ -607,6 +607,31 @@ function showSlidesB(n, no) {
      x[i].style.display = "none";
   }
   x[slideIndexB[no]-1].style.display = "block";
+}
+</script>
+
+<!--Active Tab-->
+<script>
+var header = document.getElementById("insightsTabs");
+var btns = header.getElementsByClassName("button button-tab");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+<script>
+var header2 = document.getElementById("marketplaceTabs");
+var btns2 = header2.getElementsByClassName("button button-tab2");
+for (var i = 0; i < btns2.length; i++) {
+  btns2[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active2");
+  current[0].className = current[0].className.replace(" active2", "");
+  this.className += " active2";
+  });
 }
 </script>
 

@@ -69,8 +69,8 @@
       </div>
 
       <div class="twelve columns">
-        <div class="tabbar">
-          <button class="button button-tab" onclick="openSlides1('Desktop_Apts_1')">Desktop</button>
+        <div class="tabbar" id="redesign">
+          <button class="button button-tab active" onclick="openSlides1('Desktop_Apts_1')">Desktop</button>
           <button class="button button-tab" onclick="openSlides1('Tablet_Apts_1')">Tablet</button>
           <button class="button button-tab" onclick="openSlides1('Mobile_Apts_1')">Mobile</button>
         </div>
@@ -135,10 +135,10 @@
     </div>
 
     <div class="twelve columns">
-      <div class="tabbar">
-        <button class="button button-tab" onclick="openSlides2('Desktop_Apts_2')">Desktop</button>
-        <button class="button button-tab" onclick="openSlides2('Tablet_Apts_2')">Tablet</button>
-        <button class="button button-tab" onclick="openSlides2('Mobile_Apts_2')">Mobile</button>
+      <div class="tabbar" id="checkout">
+        <button class="button button-tab2 active2" onclick="openSlides2('Desktop_Apts_2')">Desktop</button>
+        <button class="button button-tab2" onclick="openSlides2('Tablet_Apts_2')">Tablet</button>
+        <button class="button button-tab2" onclick="openSlides2('Mobile_Apts_2')">Mobile</button>
       </div>
     </div>
     <div class="twelve columns">
@@ -534,6 +534,31 @@ function showSlidesB(n, no) {
      x[i].style.display = "none";
   }
   x[slideIndexB[no]-1].style.display = "block";
+}
+</script>
+
+<!--Active Tab-->
+<script>
+var header = document.getElementById("redesign");
+var btns = header.getElementsByClassName("button button-tab");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+<script>
+var header2 = document.getElementById("checkout");
+var btns2 = header2.getElementsByClassName("button button-tab2");
+for (var i = 0; i < btns2.length; i++) {
+  btns2[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active2");
+  current[0].className = current[0].className.replace(" active2", "");
+  this.className += " active2";
+  });
 }
 </script>
 

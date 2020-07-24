@@ -541,10 +541,34 @@ button.button-tab {
   letter-spacing: 0rem;
 }
 
+.button.button-tab.active,
 .button.button-tab:hover,
 button.button-tab:hover
 .button.button-tab:focus,
 button.button-tab:focus {
+  color: #FFF;
+  background-color: #333;
+}
+
+
+.button.button-tab2,
+button.button-tab2 {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 0px;
+  line-height: 0px;
+  letter-spacing: 0rem;
+}
+
+.button.button-tab2.active2,
+.button.button-tab2:hover,
+button.button-tab2:hover
+.button.button-tab2:focus,
+button.button-tab2:focus {
   color: #FFF;
   background-color: #333;
 }
