@@ -44,4 +44,24 @@
     <loc>https://dashroc.github.io/freelance_work.html</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://dashroc.github.io/dhfc/dhfc_index.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dashroc.github.io/dhfc/dhfc_designs.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dashroc.github.io/dhfc/dhfc_writings.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dashroc.github.io/dhfc/dhfc_photos.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dashroc.github.io/dhfc/dhfc_videos.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>
