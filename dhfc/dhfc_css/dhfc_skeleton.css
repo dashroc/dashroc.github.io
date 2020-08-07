@@ -556,6 +556,10 @@ there.
     display: block;
     text-align: left;
   }
+
+  .album-cover {
+    font-size: .8em;
+  }
 }
 
 
