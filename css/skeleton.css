@@ -653,6 +653,19 @@ button.button-tab2:focus {
 }
 
 
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+  color: #999;
+  font-size: .75em;
+  padding: 20px 0px;
+}
+
+.club-link{
+  float: right;
+}
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -661,6 +674,18 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
+
+/* Phone and below */
+@media screen and (max-width: 320px) {
+  .footer {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+  }
+  .club-link{
+    float:  none;
+  }
+}
+
 
 
 /* Larger than mobile */
@@ -765,6 +790,12 @@ there.
 
   .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides10, .mySlides11, .mySlides12 {
     height: 550px;
+  }
+
+  .footer {
+    color: #999;
+    font-size: .75em;
+    padding-bottom: 20px;
   }
 
 }
