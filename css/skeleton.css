@@ -594,6 +594,7 @@ button.button-tab2:focus {
   max-width: 960px;
   position: relative;
   margin: auto;
+  background-color: #fafafa;
 }
 
 /* Hide the images by default */
