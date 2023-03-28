@@ -5,6 +5,10 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dashroc.github.io/recent_projects.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dashroc.github.io/social_solutions_work.html</loc>
     <changefreq>daily</changefreq>
   </url>
