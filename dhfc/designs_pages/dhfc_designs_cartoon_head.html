@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>The Dashiel Hermann Fan Club - Designs</title>
+  <meta name="description" content="The official Dashiel Hermann Fan Club Website and Portfolio">
+  <meta name="author" content="Art, Design, Writing, Photography, Video">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto+Slab:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../dhfc_css/dhfc_normalize.css">
+  <link rel="stylesheet" href="../dhfc_css/dhfc_skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../dhfc_images/dhfc_favicon.png">
+
+</head>
+<body>
+  <div style="border-bottom: 3px dotted #03A9F4; width: 100%; margin-bottom: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="topnav" id="myTopnav">
+            <a href="../dhfc_index.html" style="padding: 0px 16px 0px 0px;"><img src="../dhfc_images/dhfc_header_img_sm.svg" style="width: auto; height: 48px;"></a>
+            <a href="../dhfc_designs.html">Designs</a>
+            <a href="../dhfc_writings.html">Writings</a>
+            <a href="../dhfc_photos.html">Photos</a>
+            <a href="../dhfc_videos.html">Videos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <a href="../dhfc_designs.html"><i class="fa fa-arrow-left"></i> Back to Designs</a><br><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two columns" style="padding-top: 0px;">
+        <h3>Floating Head Illustration</h3>
+        <p>Yeah, I really don't have any kind of description or explination for this one. I just happened to be doodling in Adobe Illustrator and thought it looked cool. <span style="font-weight: 600;">Materials/Tools: </span>Illustrator, Photoshop, Paper, Inkjet Printer.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; padding: 30px 0px 0px 0px;">
+          <img src="../dhfc_images/designs/fulls/cartoon_head.jpg" class="u-max-full-width" onclick="openModal();currentSlide(1)" style="cursor: pointer;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align: center; padding: 30px 0px 50px 0px;">
+          <img src="../dhfc_images/designs/fulls/cartoon_head_print.jpg" class="u-max-full-width" onclick="openModal();currentSlide(2)" style="cursor: pointer;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns footer">
+        © 2020 Dashiel Hermann&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/playlist/2jKrluq1jLpAuAtNZNdEpN?si=Wr37mf2rRwGBX_H2CvPp3A" target="_blank"><i class="fa fa-spotify"></i></a><span class="portfolio-link"><a href="https://dashroc.github.io/" target="_blank">&nbsp;&nbsp;&nbsp;Professional Portfolio <i class="fa fa-external-link"></i></a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <img src="../dhfc_images/designs/fulls/cartoon_head.jpg" class="u-max-full-width">
+        </div>
+
+        <div class="mySlides">
+          <img src="../dhfc_images/designs/fulls/cartoon_head_print.jpg" class="u-max-full-width">
+        </div>
+
+      </div>
+    </div>
+
+  <!-- Navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+    }
+  </script>
+
+  <!--Image Modal-->
+  <script>
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+
+  // Current Slide Mandatory
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+</body>
+</html>
